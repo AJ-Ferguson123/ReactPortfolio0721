@@ -6,12 +6,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+// import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <>
       <Router>
         <NavMenu />
+        {/* <ScrollToTop /> */}
         <Switch>
           <Route path="/about">
             <About />
