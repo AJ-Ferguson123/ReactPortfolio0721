@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdEmail, MdLocalPhone } from 'react-icons/md'
+import SectionTitle from './SectionTitle';
+import ContactForm from './ContactForm';
+import ContactInfoItem from './ContactInfoItem';
 
 
 const ContactSectionStyle = styled.id `
