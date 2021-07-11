@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import destructionApartment from '../assets/images/destructionApartment'
+import Button from './Button'
+import apartment from '../assets/images/apartment.jpg'
+import { CgArrowsScrollV } from 'react-icons/cg'
+import PText from './Ptext'
 
 
 
@@ -26,13 +29,12 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-family: 'Montserrat SemiBold';
-      font-size: 7rem;
+      font-size: 5rem;
       color: var(--white);
     }
   }
   .hero__img {
-    max-width: 900px;
-    width: 100%;
+    width: 98%;
     height: 600px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
@@ -66,7 +68,7 @@ const HeroStyles = styled.div`
     }
     img {
       max-height: 45px;
-      width: 16px;
+      width: 100%;
       margin: 0 auto;
       object-fit: contain;
     }
@@ -79,7 +81,8 @@ const HeroStyles = styled.div`
   .hero__social__text {
     ul {
       li {
-        margin-bottom: 1rem;
+          list-style: none;
+          margin-bottom: 1rem;
         a {
           display: inline-block;
           font-size: 1.6rem;
@@ -103,6 +106,7 @@ const HeroStyles = styled.div`
     }
     .hero__img {
       height: 300px;
+      width: 100%;
     }
     .hero__info {
       margin-top: 3rem;
@@ -148,11 +152,11 @@ export default function HeroSection() {
         <div className="hero">
           <div className="container">
             <h1 className="hero__heading">
-              <span>Hello</span>
+              <span>Software Developer</span>
               <span className="hero__name">Aaron Ferguson</span>
             </h1>
             <div className="hero__img">
-              <img src={destructionApartment} alt="" />
+              <img src={apartment} alt="" />
             </div>
             <div className="hero__info">
               <PText>
@@ -164,8 +168,9 @@ export default function HeroSection() {
             </div>
             <div className="hero__social">
               <div className="hero__social__indicator">
-                <p>Follow</p>
-                <img src={SocialMediaArrow} alt="icon" />
+                <p>Follow &nbsp;</p>
+                
+                
               </div>
               <div className="hero__social__text">
                 <ul>
@@ -201,7 +206,7 @@ export default function HeroSection() {
             </div>
             <div className="hero__scrollDown">
               <p>Scroll</p>
-              <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
+              <CgArrowsScrollV alt="ScrollDown Arrow" />
             </div>
           </div>
         </div>
