@@ -4,13 +4,16 @@ import styled from 'styled-components'
 
 
 const NavStyles = styled.nav`
-position: fixed;
 z-index: 100%;
 top: 0;
 left: 0;
 width: 100%;
 padding: 1rem 0;
-background: var(--dark-bg);
+background: #20DCAB;
+background: -webkit-radial-gradient(bottom right, #20DCAB, #D0948F);
+background: -moz-radial-gradient(bottom right, #20DCAB, #D0948F);
+background: radial-gradient(to top left, #20DCAB, #D0948F);
+color: #000;
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -94,16 +97,16 @@ export default function NavMenu() {
         <>
             <ul>                
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/">HOME</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/about">ABOUT</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact">CONTACT</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/projects">PROJECTS</NavLink>
                 </li>
             </ul>
         </>

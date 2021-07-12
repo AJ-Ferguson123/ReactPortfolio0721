@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Button from './Button'
 import apartment from '../assets/images/apartment.jpg'
 import { CgArrowsScrollV } from 'react-icons/cg'
-import PText from './Ptext'
+import PText from './PText'
 
 
 
@@ -105,6 +105,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero__img {
+      background-size: cover;
       height: 300px;
       width: 100%;
     }
@@ -152,25 +153,23 @@ export default function HeroSection() {
         <div className="hero">
           <div className="container">
             <h1 className="hero__heading">
-              <span>Software Developer</span>
               <span className="hero__name">Aaron Ferguson</span>
+              <span>Software Developer</span>
             </h1>
+                    <PText>
+                      I am web designer and developer for 3
+                      years. I love to design and make new web experiences for
+                      people.
+                    </PText>
+            <div className="hero__info">
             <div className="hero__img">
               <img src={apartment} alt="" />
             </div>
-            <div className="hero__info">
-              <PText>
-                I am web designer and developer for 3
-                years. I love to design and make new web experiences for
-                people.
-              </PText>
               <Button btnText="see my works" btnLink="/projects" />
             </div>
             <div className="hero__social">
               <div className="hero__social__indicator">
                 <p>Follow &nbsp;</p>
-                
-                
               </div>
               <div className="hero__social__text">
                 <ul>
@@ -179,7 +178,7 @@ export default function HeroSection() {
                       href="https://github.com/AJ-Ferguson123"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       GH
                     </a>
                   </li>
@@ -188,7 +187,7 @@ export default function HeroSection() {
                       href="http://instagram.com/runawayrover02"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       IG
                     </a>
                   </li>
@@ -197,7 +196,7 @@ export default function HeroSection() {
                       href="https://www.linkedin.com/in/aaron-j-ferguson/"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       LI
                     </a>
                   </li>
