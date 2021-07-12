@@ -9,11 +9,8 @@ top: 0;
 left: 0;
 width: 100%;
 padding: 1rem 0;
-background: #20DCAB;
-background: -webkit-radial-gradient(bottom right, #20DCAB, #D0948F);
-background: -moz-radial-gradient(bottom right, #20DCAB, #D0948F);
-background: radial-gradient(to top left, #20DCAB, #D0948F);
-color: #000;
+background-color: #262626;
+color: #BCB4B4;
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,7 +21,7 @@ color: #000;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: #1E1E1E;
       }
     }
     a {
@@ -32,11 +29,11 @@ color: #000;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: #BCB4B4;
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: white;
     }
   }
   .mobile-menu-icon {
@@ -65,7 +62,7 @@ color: #000;
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: #1E1E1E;
       padding: 2rem;
       width: 90%;
       max-width: 300px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import apartment from '../assets/images/apartment.jpg'
+// import apartment from '../assets/images/apartment.jpg'
 import { CgArrowsScrollV } from 'react-icons/cg'
 import PText from './PText'
 
@@ -10,8 +10,9 @@ import PText from './PText'
 
 const HeroStyles = styled.div`
   .hero {
+    background-color: #262626;
     height: 100vh;
-    min-height: 1000px;
+    min-height: 666px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -21,7 +22,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -20rem;
     position: relative;
     span {
       display: inline-block;
@@ -30,14 +31,14 @@ const HeroStyles = styled.div`
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 5rem;
-      color: var(--white);
+      color: #BCB4B4;
     }
   }
   .hero__img {
     width: 98%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 2px solid #BCB4B4;
   }
   .hero__info {
     margin-top: -18rem;
@@ -162,9 +163,9 @@ export default function HeroSection() {
                       people.
                     </PText>
             <div className="hero__info">
-            <div className="hero__img">
+            {/* <div className="hero__img">
               <img src={apartment} alt="" />
-            </div>
+            </div> */}
               <Button btnText="see my works" btnLink="/projects" />
             </div>
             <div className="hero__social">
@@ -202,10 +203,6 @@ export default function HeroSection() {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="hero__scrollDown">
-              <p>Scroll</p>
-              <CgArrowsScrollV alt="ScrollDown Arrow" />
             </div>
           </div>
         </div>

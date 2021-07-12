@@ -119,6 +119,22 @@ export default function About() {
               <img src={floor} alt="me" />
             </div>
           </div>
+        <div className="about__info__item">
+              <h1 className="about__info__heading">Experiences</h1>
+
+              <AboutInfoItem
+                title="2018-2021"
+                items={['Full Stack Developer Front End {focused} at Spooner']}
+              />
+              <AboutInfoItem
+                title="2018-2021"
+                items={['BootStrap Master at LDJ industries ']}
+              />
+              <AboutInfoItem
+                title="2018-2021"
+                items={['eCommerce website/web master @ Decal Outlaw']}
+              />
+            </div>
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
@@ -152,22 +168,7 @@ export default function About() {
                 items={['Blender', 'Gimp', 'Figma']}
               />
             </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
-
-              <AboutInfoItem
-                title="2018-2021"
-                items={['Full Stack Developer Front End {focused} at Spooner']}
-              />
-              <AboutInfoItem
-                title="2018-2021"
-                items={['BootStrap Master at LDJ industries ']}
-              />
-              <AboutInfoItem
-                title="2018-2021"
-                items={['eCommerce website/web master @ Decal Outlaw']}
-              />
-            </div>
+            
           </div>
         </div>
         {/* <ContactBanner /> */}

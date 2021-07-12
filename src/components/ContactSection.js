@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdEmail, MdLocalPhone } from 'react-icons/md'
-import SectionTitle from './SectionTitle';
-import ContactForm from './ContactForm';
-import ContactInfoItem from './ContactInfoItem';
+import SectionTitle from './SectionTitle'
+import ContactForm from '../components/ContactForm'
+import ContactInfoItem from '../components/ContactInfoItem'
 
 
-const ContactSectionStyle = styled.id `
-padding: 10rem 0;
+const ContactSectionStyle = styled.div`
+padding: 5rem 0;
+background: #262626;
+color: #BCB4B4;
   .contactSection__wrapper {
     display: flex;
     gap: 5rem;
@@ -20,7 +22,7 @@ padding: 10rem 0;
     content: '';
     width: 2px;
     height: 50%;
-    background-color: var(--gray-1);
+    background-color: #BCB4B4;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);

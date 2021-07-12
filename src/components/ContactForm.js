@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const FormStyle = styled.form`
+const FormStyle = styled.div`
   width: 100%;
+  background: #262626;
+  color: #BCB4B4;
   .form-group {
     width: 100%;
     margin-bottom: 2rem;
@@ -12,11 +14,11 @@ const FormStyle = styled.form`
   }
   input,
   textarea {
-    width: 100%;
+    width: 90%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
-    background-color: var(--deep-dark);
+    color: #BCB4B4;
+    background-color: #1E1E1E;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -27,8 +29,8 @@ const FormStyle = styled.form`
     resize: vertical;
   }
   button[type='submit'] {
-    background-color: var(--gray-1);
-    color: var(--black);
+    background-color: #BCB4B4;
+    color: black;
     font-size: 2rem;
     display: inline-block;
     outline: none;
