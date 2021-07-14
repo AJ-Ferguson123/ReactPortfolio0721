@@ -23,6 +23,7 @@ const AboutSectionStyles = styled.div`
   .para {
     margin-top: 2rem;
     margin-left: 0;
+    color: #262626;
   }
   .aboutSection__buttons {
     display: flex;

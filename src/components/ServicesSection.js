@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
+import { FaCity, FaReact } from 'react-icons/fa';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -11,6 +11,9 @@ const ServicesItemsStyles = styled.div`
     gap: 10rem;
     justify-content: space-between;
     margin-top: 5rem;
+  }
+  .ServicesSectionItem .icon{
+    width: 3rem;
   }
   @media only screen and (max-width: 768px) {
     .services__allItems {
@@ -30,14 +33,14 @@ export default function ServicesSection() {
         <SectionTitle subheading="Services" heading="Below" />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<MdDesktopMac />}
+            icon={<FaCity size={21} />}
             title="Web Design"
-            desc="I complete UI/UX design for websites that helps devlop a unique look."
+            desc="I complete UI/UX design for websites that create a unique look as well as ease of use for the end user."
           />
           <ServicesSectionItem
-            icon={<MdCode />}
+            icon={<FaReact size={31} />}
             title="Full Stack Developer"
-            desc="I also develop the websites and create them to be high performance while developing for optimal speed."
+            desc="I use my tech stack to develop complete websites with a focus on security and optimal speed."
           />          
         </div>
       </div>

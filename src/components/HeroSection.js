@@ -6,11 +6,10 @@ import { CgArrowsScrollV } from 'react-icons/cg'
 import PText from './PText'
 
 
-
-
 const HeroStyles = styled.div`
   .hero {
     background-color: #262626;
+    color: #A6A6A6;
     height: 100vh;
     min-height: 666px;
     width: 100%;
@@ -157,16 +156,16 @@ export default function HeroSection() {
               <span className="hero__name">Aaron Ferguson</span>
               <span>Software Developer</span>
             </h1>
-                    <PText>
-                      I am web designer and developer for 3
-                      years. I love to design and make new web experiences for
-                      people.
-                    </PText>
+              <PText>
+                I am web designer and developer for 3
+                years. I love to design and make new web experiences for
+                people.
+             </PText>
             <div className="hero__info">
             {/* <div className="hero__img">
               <img src={apartment} alt="" />
             </div> */}
-              <Button btnText="see my works" btnLink="/projects" />
+              {/* <Button btnText="see my works" btnLink="/projects" /> */}
             </div>
             <div className="hero__social">
               <div className="hero__social__indicator">

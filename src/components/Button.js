@@ -8,12 +8,12 @@ const ButtonStyle = styled.div`
   .button {
     font-size: 2.2rem;
     background-color: ${(props) =>
-      props.outline ? 'transperant' : 'var(--gray-1)'};
+      props.outline ? '#808080' : '#BCB4B4'};
     padding: 0.7em 2em;
-    border: 2px solid var(--gray-1);
+    border: 2px solid #1e1e1e;
     border-radius: 8px;
     display: inline-block;
-    color: ${(props) => (props.outline ? 'var(--gary-1)' : 'black')};
+    color: ${(props) => (props.outline ? '#BCB4B4' : 'black')};
   }
   @media only screen and (max-width: 768px) {
     .button {

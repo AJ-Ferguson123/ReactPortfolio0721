@@ -9,7 +9,7 @@ import Data from '../resume/Data'
 
 const AboutPageStyles = styled.div`
   padding: 2rem 0 10rem 0;
-  background-color: #d8d8d8;
+  background-color: #D8D8D8;
   .top-section {
     display: flex;
     align-items: center;
@@ -17,26 +17,30 @@ const AboutPageStyles = styled.div`
     gap: 2rem;
   }
   .left {
+    background: #1E1E1E;
     flex: 3;
   }
   .right {
     flex: 2;
   }
   .about__subheading {
+    color: teal;
     font-size: 2.2rem;
     margin-bottom: 2rem;
     margin-left: 4vw;
     span {
-      background-color: var(--deep-dark);
+      background-color: #1E1E1E;
+      margin-bottom: 0.5rem;
       padding: 0.5rem;
       border-radius: 8px;
     }
   }
   .about__heading {
     font-size: 3.6rem;
-    margin-top: -48vh;
+    margin-top: 8vh;
     margin-left: 2vw;
     margin-bottom: 4rem;
+    color: #606060;
   }
   .about__info {
     margin-bottom: 4rem;
@@ -47,21 +51,25 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       width: 100%;
-      border: 2px solid var(--gray-1);
+      border: 2px solid #BCB4B4;
     }
   }
   .about__info__items {
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 10rem;    
   }
   .about__info__item {
     margin-bottom: 10rem;
+    color: #808080;
   }
  .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
   }
   h1 {
+    margin-bottom: 18vh;
     margin-left: 5vw;
+    color: #1E1E1E;
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -103,17 +111,16 @@ export default function About() {
                   art for me. I love it and now I have the opportunity to design
                   along with the coding. I find it really interesting and I
                   enjoyed the process a lot.
-                  <br />
-                  <br />
+                  <br /> <br />
                   My vision is to make the world a better place. Now almost
                   everything is becoming better than ever. It is time for us to
                   create more good stuff that helps the world to become a better
                   place.
                 </PText>
               </div>
-              <a href="">
-                <Button btnText="Download CV" btnLink='C:\Users\codingYou\source\repos\ReactPortfolio0721\src\resume\AJF Resume FE 072021.pdf ' />
-              </a>              
+              {/* <a href="">
+                <Button btnText="Download CV" btnLink='src\resume\AJF Resume FE 072021.pdf' />
+              </a>               */}
             </div>
             <div className="right">
               <img src={floor} alt="me" />
@@ -167,11 +174,9 @@ export default function About() {
                 title="Design"
                 items={['Blender', 'Gimp', 'Figma']}
               />
-            </div>
-            
+            </div>            
           </div>
-        </div>
-        {/* <ContactBanner /> */}
+        </div>       
       </AboutPageStyles>
     </>
   );

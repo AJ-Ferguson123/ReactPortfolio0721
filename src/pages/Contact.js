@@ -5,8 +5,8 @@ import Map from '../components/Map'
 export default function Contact() {
     return (
         <>
-            <ContactSection />
-            <Map />
+           <ContactSection />
+           <Map />
         </>
     )
 }

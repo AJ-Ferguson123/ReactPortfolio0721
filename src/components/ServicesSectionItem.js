@@ -16,6 +16,7 @@ const ItemStyles = styled.div`
   }
   .para {
     margin-top: 2rem;
+    color: #262626;
   }
 `;
 

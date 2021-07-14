@@ -7,6 +7,7 @@ max-width:500px;
 margin: 0 auto;
 font-size: 1.8em;
 line-height:1.3em;
+color: #BCB4B4;
 @media only screen and (max-width: 768px) {
     font-size: 1.4em;
 }
