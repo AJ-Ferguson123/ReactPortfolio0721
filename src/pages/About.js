@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import floor from '../assets/images/floor.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import Data from '../resume/Data'
-// import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 2rem 0 10rem 0;
@@ -90,6 +88,8 @@ const AboutPageStyles = styled.div`
   }
 `;
 
+
+
 export default function About() {
   return (
     <>
@@ -118,9 +118,7 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              {/* <a href="">
-                <Button btnText="Download CV" btnLink='src\resume\AJF Resume FE 072021.pdf' />
-              </a>               */}
+             <Data />
             </div>
             <div className="right">
               <img src={floor} alt="me" />

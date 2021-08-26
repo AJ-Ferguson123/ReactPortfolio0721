@@ -19,10 +19,13 @@ const AboutSectionStyles = styled.div`
   }
   .section-title {
     text-align: left;
+  }       
+  .subheading {
+    margin-left: 2vw;
   }
   .para {
     margin-top: 2rem;
-    margin-left: 0;
+    margin-left: 3vw;
     color: #262626;
   }
   .aboutSection__buttons {
@@ -54,7 +57,7 @@ const AboutSectionStyles = styled.div`
     }
     .section-title {
       text-align: center;
-    }
+    } 
     .para {
       margin: 0 auto;
       margin-top: 2rem;
@@ -76,18 +79,18 @@ export default function AboutSection() {
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTitle
+          <SectionTitle 
             subheading="Let me introduce myself"
             heading="About Me"
           />
           <PText>
-            I am awebsite designer and developer from Boulder,
+            I am a website designer and developer from Boulder,
             Colorado. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            try to show unique views to the audience through my design. 
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
+            <Button btnText="Works" btnLink="/projects" />
           </div>
         </div>
         {/* <div className="aboutSection__right">
