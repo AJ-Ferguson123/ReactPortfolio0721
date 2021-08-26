@@ -1,9 +1,13 @@
 import React from 'react'
+import ProjectItem from '..//components/ProjectItem'
+// import ProjectsSection from '..//components/ProjectsSection'
 
 export default function Projects() {
     return (
         <div>
-            <h3>Projects page Blah Blah Blah check my GitHub</h3>
+            <ProjectItem />
+            {/* <ProjectsSection /> */}
+            
         </div>
     )
 }

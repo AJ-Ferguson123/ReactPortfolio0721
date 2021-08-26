@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import decalOutlaw from '../assets/images/decalOutlaw.jpg';
+import Decal from '../assets/images/decalOut.jpg'
 
 const ProjectItemStyles = styled.div`
+  
   .projectItem__img {
     width: 100%;
     height: 400px;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    border: 3px solid grey;
     img {
       height: 100%;
     }
@@ -28,6 +29,7 @@ const ProjectItemStyles = styled.div`
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
+    margin-left: 2rem;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -37,17 +39,17 @@ const ProjectItemStyles = styled.div`
 `;
 
 export default function ProjectItem({
-  img = decalOutlaw,
-  title = 'Project Name',
-  desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  
+  title = 'Boring ol WordPress',
+  desc = 'eCommerce site that was my first ever paid project.',
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project img" />
+      <Link to="/about" className="projectItem__img">
+        <img src={Decal} alt="project img" />
       </Link>
       <div className="projectItem__info">
-        <Link to="#">
+        <Link to="/">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
