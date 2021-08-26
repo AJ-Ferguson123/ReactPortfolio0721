@@ -4,13 +4,13 @@ import styled from 'styled-components'
 
 
 const NavStyles = styled.nav`
-position: fixed;
 z-index: 100%;
 top: 0;
 left: 0;
 width: 100%;
 padding: 1rem 0;
-background: var(--dark-bg);
+background-color: #262626;
+color: #BCB4B4;
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ background: var(--dark-bg);
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: #1E1E1E;
       }
     }
     a {
@@ -29,11 +29,11 @@ background: var(--dark-bg);
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: #BCB4B4;
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: white;
     }
   }
   .mobile-menu-icon {
@@ -62,7 +62,7 @@ background: var(--dark-bg);
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: #1E1E1E;
       padding: 2rem;
       width: 90%;
       max-width: 300px;
@@ -94,20 +94,20 @@ export default function NavMenu() {
         <>
             <ul>                
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/">HOME</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/about">ABOUT</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact">CONTACT</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/projects">PROJECTS</NavLink>
                 </li>
             </ul>
         </>
-            </NavStyles>
-    )
+        </NavStyles>
+    );
 }
 

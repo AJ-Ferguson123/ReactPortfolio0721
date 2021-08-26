@@ -1,14 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import destructionApartment from '../assets/images/destructionApartment'
-
-
+import Button from './Button'
+// import apartment from '../assets/images/apartment.jpg'
+import { CgArrowsScrollV } from 'react-icons/cg'
+import PText from './PText'
 
 
 const HeroStyles = styled.div`
   .hero {
+    background-color: #262626;
+    color: #A6A6A6;
     height: 100vh;
-    min-height: 1000px;
+    min-height: 666px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -18,7 +21,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -20rem;
     position: relative;
     span {
       display: inline-block;
@@ -26,16 +29,15 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-family: 'Montserrat SemiBold';
-      font-size: 7rem;
-      color: var(--white);
+      font-size: 5rem;
+      color: #BCB4B4;
     }
   }
   .hero__img {
-    max-width: 900px;
-    width: 100%;
+    width: 98%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 2px solid #BCB4B4;
   }
   .hero__info {
     margin-top: -18rem;
@@ -66,7 +68,7 @@ const HeroStyles = styled.div`
     }
     img {
       max-height: 45px;
-      width: 16px;
+      width: 100%;
       margin: 0 auto;
       object-fit: contain;
     }
@@ -79,7 +81,8 @@ const HeroStyles = styled.div`
   .hero__social__text {
     ul {
       li {
-        margin-bottom: 1rem;
+          list-style: none;
+          margin-bottom: 1rem;
         a {
           display: inline-block;
           font-size: 1.6rem;
@@ -102,7 +105,9 @@ const HeroStyles = styled.div`
       }
     }
     .hero__img {
+      background-size: cover;
       height: 300px;
+      width: 100%;
     }
     .hero__info {
       margin-top: 3rem;
@@ -148,24 +153,23 @@ export default function HeroSection() {
         <div className="hero">
           <div className="container">
             <h1 className="hero__heading">
-              <span>Hello</span>
               <span className="hero__name">Aaron Ferguson</span>
+              <span>Software Developer</span>
             </h1>
-            <div className="hero__img">
-              <img src={destructionApartment} alt="" />
-            </div>
-            <div className="hero__info">
               <PText>
                 I am web designer and developer for 3
                 years. I love to design and make new web experiences for
                 people.
-              </PText>
+             </PText>
+            <div className="hero__info">
+            {/* <div className="hero__img">
+              <img src={apartment} alt="" />
+            </div> */}
               <Button btnText="see my works" btnLink="/projects" />
             </div>
             <div className="hero__social">
               <div className="hero__social__indicator">
-                <p>Follow</p>
-                <img src={SocialMediaArrow} alt="icon" />
+                <p>Follow &nbsp;</p>
               </div>
               <div className="hero__social__text">
                 <ul>
@@ -174,7 +178,7 @@ export default function HeroSection() {
                       href="https://github.com/AJ-Ferguson123"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       GH
                     </a>
                   </li>
@@ -183,7 +187,7 @@ export default function HeroSection() {
                       href="http://instagram.com/runawayrover02"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       IG
                     </a>
                   </li>
@@ -192,16 +196,12 @@ export default function HeroSection() {
                       href="https://www.linkedin.com/in/aaron-j-ferguson/"
                       target="_blank"
                       rel="noreferrer"
-                    >
+                      >
                       LI
                     </a>
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="hero__scrollDown">
-              <p>Scroll</p>
-              <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
             </div>
           </div>
         </div>

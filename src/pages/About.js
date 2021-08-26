@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import AboutMe from '../components/AboutMe';
 
 export default function About() {
-    return (
-        <div>
-            <h3>About page</h3>
-        </div>
-    )
+  return (
+      <>
+         <AboutMe />
+      </>
+  )
 }
