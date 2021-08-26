@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
+import About from '../pages/About';
 // import floor from '../assets/images/floor'
 
 const AboutSectionStyles = styled.div`
@@ -89,13 +90,13 @@ export default function AboutSection() {
             try to show unique views to the audience through my design. 
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Read More" btnLink="/about" outline />
+            <Button btnText="Read More" btnLink="/about" />
             <Button btnText="Works" btnLink="/projects" />
           </div>
         </div>
-        {/* <div className="aboutSection__right">
-          <img className="aboutImg" src={floor} alt="Img" />
-        </div> */}
+        <div className="aboutSection__right">
+          
+        </div>
       </div>
     </AboutSectionStyles>
   );

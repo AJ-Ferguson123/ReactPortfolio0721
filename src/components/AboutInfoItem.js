@@ -42,7 +42,8 @@ const AboutItemStyles = styled.div`
 export default function AboutInfoItem({
   title = 'Title',
   items = ['HTML', 'CSS'],
-}) {
+}) 
+{
   return (
     <AboutItemStyles>
       <h1 className="title">{title}</h1>

@@ -165,7 +165,7 @@ export default function HeroSection() {
             {/* <div className="hero__img">
               <img src={apartment} alt="" />
             </div> */}
-              {/* <Button btnText="see my works" btnLink="/projects" /> */}
+              <Button btnText="see my works" btnLink="/projects" />
             </div>
             <div className="hero__social">
               <div className="hero__social__indicator">

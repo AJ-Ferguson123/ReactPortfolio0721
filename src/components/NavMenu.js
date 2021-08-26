@@ -107,7 +107,7 @@ export default function NavMenu() {
                 </li>
             </ul>
         </>
-            </NavStyles>
-    )
+        </NavStyles>
+    );
 }
 
