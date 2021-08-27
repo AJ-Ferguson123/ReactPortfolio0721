@@ -26,6 +26,7 @@ background-color: #818283;
   }
   .projectItem__title {
     font-size: 2.2rem;
+    color: #BCB4B4;
   }
   .projectItem__desc {
     font-size: 1.6rem;
