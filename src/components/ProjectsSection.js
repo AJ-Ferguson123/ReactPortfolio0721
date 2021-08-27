@@ -1,6 +1,6 @@
 // import React from 'react';
 // import styled from 'styled-components';
-// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Navigation } from 'swiper';
 // import ProjectItem from './ProjectItem';
 // import SectionTitle from './SectionTitle';
@@ -63,8 +63,8 @@
 //       <div className="container">
 //         <SectionTitle subheading="some of my recent works" heading="Projects" />
 //         <div className="projects__allItems">
-//           <Swiper
-//             spaceBetween={30}
+//           {/* <Swiper */}
+//             {/* spaceBetween={30}
 //             slidesPerView={1}
 //             navigation
 //             breakpoints={{
@@ -81,7 +81,7 @@
 //                 slidesPerView: 3,
 //               },
 //             }}
-//           >
+//           > */}
 //             {projects.map((project, index) => {
 //               if (index >= 5) return;
 //               return (
@@ -94,7 +94,7 @@
 //                 </SwiperSlide>
 //               );
 //             })}
-//           </Swiper>
+//           {/* </Swiper> */}
 //         </div>
 //       </div>
 //     </ProjectSectionStyle>

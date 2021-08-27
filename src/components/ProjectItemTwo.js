@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Decal from '../assets/images/decalOut.jpg'
+import Clone from '../assets/images/redClone.jpg'
 
-const ProjectItemStyles = styled.div`
+
+const ProjectItemTwoStyles = styled.div `
 padding: 2rem 0 10rem 0;
 background-color: #818283;
   .projectItem__img {
@@ -40,21 +41,21 @@ background-color: #818283;
   }
 `;
 
-export default function ProjectItem({  
-  title = 'Decal OutLaw',
-  desc = 'eCommerce site that was my first ever paid project using WordPress.',
-}) {
-  return (
-    <ProjectItemStyles>
-      <Link to="/about" className="projectItem__img">
-        <img src={Decal} alt="project img" />
-      </Link>
-      <div className="projectItem__info">
-        <Link to="/">
-          <h3 className="projectItem__title">{title}</h3>
+export default function ProjectItemTwo({  
+    title = 'Reddit Clone',
+    desc = 'ReactJS clone of social media app Reddit, well just because',
+  }) {
+    return (
+      <ProjectItemTwoStyles>
+        <Link to="/about" className="projectItem__img">
+          <img src={Clone} alt="project img" />
         </Link>
-        <p className="projectItem__desc">{desc}</p>
-      </div>
-    </ProjectItemStyles>
-  );
-}
+        <div className="projectItem__info">
+          <Link to="/">
+            <h3 className="projectItem__title">{title}</h3>
+          </Link>
+          <p className="projectItem__desc">{desc}</p>
+        </div>
+      </ProjectItemTwoStyles>
+    );
+  }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import floor from '../assets/images/floor.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
+import { GiSonicBoom } from 'react-icons/gi'
 
 
 const AboutPageStyles = styled.div`
@@ -69,6 +70,7 @@ const AboutPageStyles = styled.div`
     margin-left: 5vw;
     color: #1E1E1E;
   }
+  
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -117,11 +119,11 @@ export default function AboutMe() {
                   create more good stuff that helps the world to become a better
                   place.
                 </PText>
-              </div>
-             
+              </div>             
             </div>
-            <div className="right">
+            <div className="right"><GiSonicBoom />
               <img src={floor} alt="me" className=""/>
+              <GiSonicBoom />
             </div>
           </div>
         <div className="about__info__item">
@@ -170,7 +172,7 @@ export default function AboutMe() {
               />
               <AboutInfoItem
                 title="Design"
-                items={['Blender', 'Gimp', 'Figma']}
+                items={['Blender', 'Gimp']}
               />
             </div>            
           </div>
