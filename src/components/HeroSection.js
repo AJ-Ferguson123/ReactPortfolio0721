@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-// import apartment from '../assets/images/apartment.jpg'
-import { CgArrowsScrollV } from 'react-icons/cg'
 import PText from './PText'
 
 
@@ -162,9 +160,6 @@ export default function HeroSection() {
                 people.
              </PText>
             <div className="hero__info">
-            {/* <div className="hero__img">
-              <img src={apartment} alt="" />
-            </div> */}
               <Button btnText="see my works" btnLink="/projects" />
             </div>
             <div className="hero__social">

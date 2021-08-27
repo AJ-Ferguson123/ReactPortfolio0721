@@ -6,7 +6,7 @@ import Clone from '../assets/images/redClone.jpg'
 
 const ProjectItemTwoStyles = styled.div `
 padding: 2rem 0 10rem 0;
-background-color: #818283;
+background-color: #1e1e1e;
   .projectItem__img {
     margin-left: .5rem;
     width: 64%;
@@ -26,9 +26,14 @@ background-color: #818283;
     border-radius: 12px;
   }
   .projectItem__title {
+    padding-left: 2rem;  
     font-size: 2.2rem;
+    color: #808080;
+    background: rgb(0,212,255);
+    background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
   }
   .projectItem__desc {
+    color: #BCB4B4;
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
@@ -51,7 +56,7 @@ export default function ProjectItemTwo({
           <img src={Clone} alt="project img" />
         </Link>
         <div className="projectItem__info">
-          <Link to="/">
+          <Link to="https://github.com/AJ-Ferguson123/redditclient">
             <h3 className="projectItem__title">{title}</h3>
           </Link>
           <p className="projectItem__desc">{desc}</p>
