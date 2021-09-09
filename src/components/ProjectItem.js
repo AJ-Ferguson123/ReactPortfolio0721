@@ -7,12 +7,12 @@ const ProjectItemStyles = styled.div`
 padding: 2rem 0 10rem 0;
 background-color: #818283;
   .projectItem__img {
-    margin-left: .5rem;
+    margin-left: 7.5rem;
     width: 64%;
     height: 400px;
     border-radius: 12px;
-    overflow: hidden;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     border: 3px solid grey;
     img {
       height: 100%;
@@ -25,14 +25,21 @@ background-color: #818283;
     border-radius: 12px;
   }
   .projectItem__title {
+    margin-left: .5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
     font-size: 2.2rem;
     color: #BCB4B4;
   }
   .projectItem__desc {
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
     margin-left: 2rem;
+    paddin-left: 2.5rem;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {

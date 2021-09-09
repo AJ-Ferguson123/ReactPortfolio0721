@@ -8,10 +8,10 @@ const ProjectItemTwoStyles = styled.div `
 padding: 2rem 0 10rem 0;
 background-color: #1e1e1e;
   .projectItem__img {
-    margin-left: .5rem;
+    margin-left: 3.5rem;
     width: 64%;
     height: 400px;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     display: inline-block;
     border: 3px solid grey;
@@ -47,7 +47,6 @@ background-color: #1e1e1e;
 `;
 
 export default function ProjectItemTwo({  
-    title = 'Reddit Clone',
     desc = 'ReactJS clone of social media app Reddit, well just because',
   }) {
     return (
@@ -57,7 +56,6 @@ export default function ProjectItemTwo({
         </Link>
         <div className="projectItem__info">
           <Link to="https://github.com/AJ-Ferguson123/redditclient">
-            <h3 className="projectItem__title">{title}</h3>
           </Link>
           <p className="projectItem__desc">{desc}</p>
         </div>
