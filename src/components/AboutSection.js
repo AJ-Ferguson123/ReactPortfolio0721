@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import About from '../pages/About';
-// import floor from '../assets/images/floor'
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;

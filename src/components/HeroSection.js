@@ -107,9 +107,6 @@ const HeroStyles = styled.div`
       height: 300px;
       width: 100%;
     }
-    .hero__info {
-      margin-top: 3rem;
-    }
     .hero__social {
       left: 0px;
       bottom: -15%;
@@ -159,9 +156,6 @@ export default function HeroSection() {
                 years. I love to design and make new web experiences for
                 people.
              </PText>
-            <div className="hero__info">
-              <Button btnText="see my works" btnLink="/projects" />
-            </div>
             <div className="hero__social">
               <div className="hero__social__indicator">
                 <p>Follow &nbsp;</p>
