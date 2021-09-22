@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectItem from '..//components/ProjectItem'
-import ProjectsSection from '..//components/ProjectsSection'
+// import Cube from '../assets/images/style/Cube'
 import ProjectItemTwo from '../components/ProjectItemTwo'
 
 export default function Projects() {
@@ -8,7 +8,7 @@ export default function Projects() {
         <div>
             <ProjectItem />
             <ProjectItemTwo />
-            {/* <ProjectsSection /> */}
+            {/* <Cube /> */}
             
         </div>
     )

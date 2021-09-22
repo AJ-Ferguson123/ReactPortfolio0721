@@ -1,4 +1,4 @@
-import Reaact from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import PText from '../components/PText';
 import floor from '../assets/images/floor.jpg';
