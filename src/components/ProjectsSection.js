@@ -34,7 +34,7 @@ export default function ProjectsSection() {
         <SectionTitle subheading="some of my recent works" heading="Projects" />
         <div className="projects__allItems">
          
-            {projects.map((project, index) => {
+            {projects((project, index) => {
               if (index >= 5) return;
               return (
                   <ProjectItem

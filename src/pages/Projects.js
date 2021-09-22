@@ -1,14 +1,16 @@
 import React from 'react'
 import ProjectItem from '..//components/ProjectItem'
-// import Cube from '../assets/images/style/Cube'
+import ProjectsSection from '../components/ProjectsSection'
 import ProjectItemTwo from '../components/ProjectItemTwo'
 
 export default function Projects() {
     return (
         <div>
-            <ProjectItem />
-            <ProjectItemTwo />
-            {/* <Cube /> */}
+
+            <h3>Currently under Redesign, check back shortly</h3>
+            {/* <ProjectItem />
+            <ProjectItemTwo /> */}
+            {/* <ProjectsSection /> */}
             
         </div>
     )
